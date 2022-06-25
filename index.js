@@ -62,6 +62,7 @@ function loadQuiz () {
 
 function gotSelected() {
     let answer ;
+
     answerEls.forEach((answerEl) =>{
         if (answerEl.checked){
             answer = answerEl.id;
@@ -77,6 +78,7 @@ function deselectAnswers() {
 }
 
 submitBtn.addEventListener('click' , function () {
+    
     const answer = gotSelected();
 
     if (answer) {
